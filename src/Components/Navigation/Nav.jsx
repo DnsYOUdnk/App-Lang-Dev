@@ -1,0 +1,14 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+import * as classes from "./Nav.module.css";
+
+export const Nav = () => {
+    return (
+        <nav className={classes.default.nav}>
+            <NavLink to="/dashboard">Home</NavLink>
+            <NavLink to="/games">Games</NavLink>
+            <NavLink to="/library">Library</NavLink>
+            <NavLink to="/learn">Learn</NavLink>
+        </nav>
+    )
+}
